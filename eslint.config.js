@@ -7,7 +7,6 @@ export default [
   {
     ignores: ["dist"],
   },
-
   {
     files: ["**/*.js"],
     languageOptions: {
@@ -21,4 +20,15 @@ export default [
       ...js.configs.recommended.rules,
     },
   },
+  {
+    files: ["**/*.test.js", "**/*.spec.js"],  
+    languageOptions: {  
+      globals: {  
+        ...globals.jest,
+      },  
+    },  
+    env: {  
+      jest: true, 
+    },  
+  },  
 ];
