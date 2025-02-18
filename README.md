@@ -1,0 +1,1 @@
+In this repository, I practiced using TDD and writing unit tests with Jest.
